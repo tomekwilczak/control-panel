@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: Digital;
+  src: url("../fonts/digital-7-mono.ttf");
+  font-weight: normal;
+}
+
+body {
+  background-image: url("../images/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+p,
+div {
+  font-family: Verdana;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: absolute;
+  padding: 0px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.clickable_area {
+  display: block;
+  width: 500px;
+  height: 200px;
+  margin-top: 45px;
+  /* border: 2px solid red; */
+}
+#cpanel {
+  display: none;
+  position: fixed;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* float: right; */
+}
+
+input[type="text"] {
+  border: 0px;
+  padding: 3px;
+  background: transparent;
+  color: #fff;
+}
+
+input[type="button"] {
+  padding: 3px;
+  background: transparent;
+  color: #fff;
+}
+
+#button_music {
+  background-image: url("../images/music.png");
+  background-color: transparent;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 16px;
+}
+
+#button_mute {
+  background-image: url("../images/mute.png");
+  background-color: transparent;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 16px;
+}
+
+#timer .countdown-timer {
+  font-family: Digital;
+  margin-top: 0px;
+  border: 0px red solid;
+  padding-top: 50px;
+  /* width: 750px; */
+  color: #f30000;
+  font-size: 105px;
+  /* text-align: left; */
+  /* margin-left: 450px; */
+  font-weight: 400;
+  align-self: center;
+}
+
+#messages {
+  font-size: 36px;
+  /* text-align: center;
+  float: right;
+  padding-left: 100px;
+  padding-right: 50px; */
+  margin-top: 70px;
+  margin-right: 25px;
+  margin-left: 50px;
+  /* width: 825px; */
+  color: #fff;
+  background: rgba(190, 38, 38, 0.9);
+}
+
+#winnersdiv {
+  display: none;
+  background-color: green;
+  width: 100%;
+  min-height: 100vh;
+  /* position: fixed; */
+  z-index: 0;
+  /* margin-top: -150px; */
+  /* clear: both;
+  height: 1174px;
+  width: 1280px; */
+}
+
+#winnersdiv .countdown-timer {
+  font-family: Digital;
+  border: 0px #fff solid;
+  width: 100%;
+  align-self: center;
+  color: #fff;
+  padding-top: 50px;
+  font-size: 105px;
+  text-align: center;
+  font-weight: 400;
+}
